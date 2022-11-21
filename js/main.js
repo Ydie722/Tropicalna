@@ -2,6 +2,11 @@ const nav = document.querySelector(".nav");
 const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
 
+// colorki do burgerka
+const navBtnBars = document.querySelector(".burger-btn__bars");
+const allSections = document.querySelectorAll(".section");
+const footerYear = document.querySelector(".footer__year");
+
 // =========================================
 // Funkcje do menu burgerowego i nav__items
 // =========================================
@@ -25,5 +30,13 @@ const handleNavItemsAnimation = () => {
 		delayTime++;
 	});
 };
+
+// Funkcja Roku w spanie footer
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+handleCurrentYear(); // Wywołanie funkcji
+// Funkcja Roku w spanie footer
 
 navBtn.addEventListener("click", handleNav);
