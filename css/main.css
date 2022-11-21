@@ -105,12 +105,6 @@ body {
   font-size: 1.6rem;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
-}
-
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -138,7 +132,7 @@ body {
 .burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
   position: absolute;
   right: 0;
-  height: 3px;
+  height: 4px;
   content: "";
   background-color: #fff;
   -webkit-transition: width 0.3s;
@@ -236,6 +230,12 @@ body {
 .nav-item-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .header {

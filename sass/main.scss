@@ -20,13 +20,6 @@ body {
 	font-size: 1.6rem;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-	background-color: colors.$dark;
-}
-
-
 // NAV
 
 .burger-btn {
@@ -129,6 +122,13 @@ body {
 }
 .nav-item-animation {
 	animation: navItemsAnimation 1s both;
+}
+
+// color do burgera / js
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: colors.$dark;
 }
 
 //HEADER
